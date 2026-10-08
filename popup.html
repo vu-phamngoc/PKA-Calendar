@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 260px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 14px;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        h3 {
+            margin: 0 0 12px 0;
+            font-size: 14px;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        .btn-warning {
+            background: #d97706;
+            color: #fff;
+        }
+
+        .btn-all {
+            background: #059669;
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 13.5px;
+        }
+
+        #status {
+            font-size: 11.5px;
+            color: #475569;
+            text-align: center;
+            min-height: 18px;
+            margin-top: 10px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Universitry Schedule to Calendar</h3>
+
+    <button id="btnAllInOne" class="btn btn-all">Lịch học kỳ (3 tháng)</button>
+
+    <div class="divider"></div>
+
+    <button id="btnWeekOnly" class="btn btn-primary">Lịch tuần</button>
+    <button id="btnExamOnly" class="btn btn-warning">Lịch thi</button>
+
+    <div id="status">Sẵn sàng xuất lịch.</div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

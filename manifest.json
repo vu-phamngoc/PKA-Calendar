@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "PKA Calendar",
+    "version": "2.0.0",
+    "description": "Tự động trích xuất toàn bộ Lịch học và Lịch thi sinh viên thành file ICS",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Đồng bộ Lịch học & Lịch thi"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
