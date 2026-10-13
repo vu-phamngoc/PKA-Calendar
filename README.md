@@ -4,15 +4,6 @@ Tiện ích mở rộng Chrome giúp sinh viên trích xuất lịch học, lị
 
 ## 1. Tổng quan
 
-### Mục tiêu
-
-PKA Calendar giảm thao tác nhập lịch thủ công và hỗ trợ sinh viên quản lý lịch học tập tập trung trên ứng dụng lịch cá nhân.
-
-### Đối tượng sử dụng
-
-- Sinh viên sử dụng cổng thông tin đào tạo có giao diện lịch học và lịch thi tương thích.
-- Cán bộ hỗ trợ sinh viên cần hướng dẫn quy trình xuất lịch.
-- Đơn vị triển khai nội bộ muốn đóng gói tiện ích cho người dùng trong trường.
 
 ### Phạm vi hiện tại
 
@@ -34,7 +25,7 @@ PKA Calendar giảm thao tác nhập lịch thủ công và hỗ trợ sinh viê
 
 ## 3. Yêu cầu hệ thống
 
-- Google Chrome hoặc trình duyệt Chromium hỗ trợ Chrome Extension Manifest V3.
+- Google Chrome hoặc trình duyệt Chromium hỗ trợ Chrome Extension.
 - Quyền truy cập vào cổng thông tin đào tạo của nhà trường.
 - Tài khoản sinh viên đã đăng nhập.
 - Trang lịch học được tải đầy đủ trước khi xuất dữ liệu.
@@ -163,16 +154,7 @@ Project hiện không có bước build hoặc bộ kiểm thử tự động. Q
 
 Khi thay đổi selector hoặc logic phân tích dữ liệu, cần kiểm tra tối thiểu các trường hợp: giờ dạng `09:30 - 12:10`, giờ dạng `8h - 17h`, sự kiện cả ngày, lịch thi và dữ liệu trống.
 
-## 12. Bảo trì và phát hành
-
-Trước mỗi lần phát hành nội bộ:
-
-1. Xác nhận version trong `manifest.json`.
-2. Kiểm tra trên Chrome phiên bản được tổ chức hỗ trợ.
-3. Kiểm thử ba luồng xuất lịch trên dữ liệu đại diện.
-4. Kiểm tra tệp `.ics` bằng ít nhất một ứng dụng lịch đích.
-5. Ghi lại thay đổi và vấn đề tương thích trong lịch sử phát hành.
 
 
 
-` Cre: Internet & Cải tiến Update `
+` Cre: Internet & Cải tiến & Update `
