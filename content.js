@@ -214,7 +214,7 @@ async function crawlFullSemesterAndExams() {
                 weekLi.click();
                 // SỬA LỖI 2: Tăng thời gian chờ dữ liệu tải xong từ 280ms lên 800ms
                 // Việc này giúp đảm bảo web kịp render ra các ô môn học (.task) trước khi quét
-                await wait(800); 
+                await wait(3000); 
             }
 
             parseWeeklyGridSchedule().forEach((ev) => allEvents.set(ev.uid, ev));
