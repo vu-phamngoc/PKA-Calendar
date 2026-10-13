@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "PKA Calendar",
+    "name": "PKA Export Calendar",
     "version": "3.1",
     "description": "(2024-06-19) Tự động trích xuất toàn bộ Lịch học và Lịch thi sinh viên thành file ICS ",
     "permissions": [
