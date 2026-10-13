@@ -2,15 +2,24 @@
     "manifest_version": 3,
     "name": "PKA Calendar",
     "version": "3.0.0",
-    "description": "(2024-06-19)
-    Tự động trích xuất toàn bộ Lịch học và Lịch thi sinh viên thành file ICS ",
+    "description": "(2024-06-19) Tự động trích xuất toàn bộ Lịch học và Lịch thi sinh viên thành file ICS ",
     "permissions": [
         "activeTab",
         "scripting"
     ],
+    "icons": {
+        "16": "image/lịch.jpg",
+        "32": "image/lịch.jpg",
+        "48": "image/lịch.jpg",
+        "128": "image/lịch.jpg"
+    },
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Đồng bộ Lịch học & Lịch thi"
+        "default_title": "Đồng bộ Lịch học & Lịch thi",
+        "default_icon": {
+            "16": "image/lịch.jpg",
+            "32": "image/lịch.jpg"
+        }
     },
     "content_scripts": [
         {
