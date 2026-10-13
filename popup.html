@@ -17,9 +17,32 @@
             margin: 0 0 12px 0;
             font-size: 14px;
             color: #1e3a8a;
+        }
+
+        .profile {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .profile img {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border: 2px solid #2563eb;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-text h3 {
+            margin: 0;
+        }
+
+        .profile-text p {
+            margin: 3px 0 0;
+            color: #64748b;
+            font-size: 10.5px;
         }
 
         .btn {
@@ -78,7 +101,13 @@
 </head>
 
 <body>
-    <h3>Universitry Schedule to Calendar</h3>
+    <div class="profile">
+        <img src="image/lịch.jpg" alt="Ảnh đại diện PKA Calendar">
+        <div class="profile-text">
+            <h3>PKA Calendar</h3>
+            <p>Trợ lý lịch học tập</p>
+        </div>
+    </div>
 
     <button id="btnAllInOne" class="btn btn-all">Lịch học kỳ (3 tháng)</button>
 
